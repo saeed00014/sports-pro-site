@@ -1,0 +1,106 @@
+section{
+  width: 100vw;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plans-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 1170px;
+}
+
+.plans-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  gap: 4rem;
+}
+
+.plan-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--background-color);
+  color: var(--main-text);
+  padding: 1.3rem;
+  padding-bottom: 3rem;
+  padding-right: 2.5rem;
+  border-top-right-radius: 50px;
+}
+
+#price {
+  display: flex;
+  margin: 0.5rem 0;
+  color: aqua;
+}
+
+.plan-content p {
+  opacity: 0.8;
+  color: var(--main-text);
+}
+
+.plan-content button{
+  width: 160px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: var(--color-primary);
+  color: var(--main-text); 
+}
+
+.buy-btn {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  bottom: 10px;
+  width: 100%;
+}
+
+.unavailable {
+  opacity: 0.4;
+}
+
+#tick {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+}
+
+@media screen and (max-width:650px){
+  .plans-content {
+    grid-template-columns: 1fr;
+    width: 80%;
+  }
+
+  .plan-content {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-width:650px) and (max-width:1000px){
+  .plans-content {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .plan-content {
+    font-size: 1.15rem;
+    padding-bottom: 4rem;
+  }
+
+  .buy-btn button {
+    font-size: 1.3rem;
+    height: 45px;
+    width: 230px;
+  }
+}

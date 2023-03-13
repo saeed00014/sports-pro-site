@@ -1,0 +1,22 @@
+*, *::after, *::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(65, 65, 65);
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+:root {
+    --color-primary: rgb(100, 190, 190);
+    --main-text: rgb(255, 255, 255);
+    --icon-back: rgb(92, 92, 92);
+    --background-color: rgba(0, 255, 255, 0.514);
+  }
+  

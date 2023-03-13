@@ -1,0 +1,26 @@
+.main__gallery-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 90%;
+  margin-top: 5rem;
+  gap: 3rem 0.5rem;
+  max-width: 1170px;
+}
+
+.gallery-container img {
+  border: 1px solid var(--main-text);
+  width: 250px;
+}
+
+.img-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
